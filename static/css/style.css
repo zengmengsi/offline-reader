@@ -1,0 +1,12 @@
+
+.mint-tab-item-icon {
+  height: auto;
+}
+.mint-tabbar > .mint-tab-item.is-selected {
+  color: #2EBD61;
+  background-color: rgba(255,255,255,0)
+}
+.mint-tabbar{
+  color: #d2d2d2;
+  background-color: #fff;
+}

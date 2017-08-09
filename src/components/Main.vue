@@ -107,7 +107,7 @@
           }
           _this.issueData = _this.issueData.concat(res.data.result);
           _this.prefix = res.data.prefix;
-//          _this.loading = false;
+          _this.loading = false;
 
         })
       },

@@ -4,7 +4,8 @@
 import axios from 'axios'
 
 var instance = axios.create({
-  baseURL: 'http://localhost:8081',
+  // baseURL: 'http://localhost:8081',
+  baseURL:'http://59.110.218.46:8081',
   timeout:10000,
 });
 

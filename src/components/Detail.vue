@@ -88,7 +88,6 @@
               this.styleShow=!this.styleShow;this.footShow=false;
 
             }else{
-//                alert(344)
                 this.lastClickTime=nowTime;
                 this.clickTimer=setTimeout(()=>{
                   this.footShow=!this.footShow;this.styleShow=false;
@@ -152,6 +151,7 @@
             pageid: id
           }
         }).then(function (res) {
+          res.data=res.data.replace(/assets.propa.cn\/assetsSP/g,"qnbook.propa.cn\/Book")
           _this.$set(_this.pagelist[index], 'page', res.data)
         })
       },

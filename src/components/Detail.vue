@@ -151,7 +151,7 @@
             pageid: id
           }
         }).then(function (res) {
-          res.data=res.data.replace(/assets.propa.cn\/assetsSP/g,"qnbook.propa.cn\/Book")
+          res.data=res.data.replace(/http:\/\/assets.propa.cn\/assetsSP/g,"https://qnbook.propa.cn/Book")
           _this.$set(_this.pagelist[index], 'page', res.data)
         })
       },

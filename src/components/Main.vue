@@ -29,7 +29,7 @@
             <router-link
               :to="{ name: 'Detail', params: { id: item.id,bookname: item.bookname,name:item.name,bookid:item.bookid}}">
               <div class="issue" :bookid="item.bookid" :issuename="item.name" :bookname="item.bookname" :id="item.id">
-                <img class="issue" v-bind:src="prefix+'/'+item.bookid+'/'+item.id+'/cover.jpg'">
+                <img class="issue" v-bind:src="prefix+item.bookid+'/'+item.id+'/cover.jpg'">
                 <div class="title"><p class="title">{{item.bookname}}</p>
                 </div>
                 <div class="title"><p class="title">{{item.name}}</p>
